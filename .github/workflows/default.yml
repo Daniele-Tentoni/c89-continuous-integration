@@ -1,7 +1,8 @@
 name: Test
+on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    stages:
+    steps:
       - uses: actions/checkout@v2
       - run: gcc -Wall -Wextra -std=c89 -pedantic math2.c main.c -o main
