@@ -1,0 +1,7 @@
+name: Test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    stages:
+      - uses: actions/checkout@v2
+      - run: gcc -Wall -Wextra -std=c89 -pedantic math2.c main.c -o main
