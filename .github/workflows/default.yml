@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: gcc -Wall -Wextra -std=c89 -pedantic math2.c main.c -o main
+      - run: make
       - run: ./main
