@@ -9,7 +9,14 @@
 
 echo "Test main.c program"
 
-# Check the program ran without an input
-./main.exe
+# TODO: Check if main.exe file exists.
 
-echo $?
+# Check the program ran without an input, discarding the output
+./main.exe > main.error
+
+# In this case, the result must be 1
+if [ $? -ne 0 ]; then
+  echo "All right! The return code is right"
+else
+  echo "There was an error. Check main.error file"
+fi
