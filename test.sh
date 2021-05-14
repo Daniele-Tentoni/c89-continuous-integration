@@ -23,6 +23,14 @@
 
 echo "Test main.c program"
 
+# Try to compile the program.
+make clean
+make
+if [ $? -ne 0 ]; then
+  echo "Make command failed to compile the program\n"
+  exit
+fi
+
 # TODO: Check if main.exe file exists.
 
 # Check the program ran without an input, discarding the output

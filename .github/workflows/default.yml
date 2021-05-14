@@ -21,6 +21,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: make
       - run: ./test.sh
 # TODO: CI must fail if test.sh produce errors or main.error file is not empty.
