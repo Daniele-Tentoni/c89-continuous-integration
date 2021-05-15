@@ -18,7 +18,11 @@ I encourage all contributions to this repository! Open issues and pull requests.
 
 (From [Atom Guidelines](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#styleguides))
 
-* Use the present tense ("Add feature", not "Added feature")
-* Use the imperative mood ("Move cursor to...", not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
+- Use the present tense ("Add feature", not "Added feature")
+- Use the imperative mood ("Move cursor to...", not "Moves cursor to...")
+- Limit the first line to 72 characters or less
+- Reference issues and pull requests liberally after the first line
+
+## Reference
+
+Any contributor reference count for me! Add your metadata to humans.txt file.
