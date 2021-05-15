@@ -23,7 +23,7 @@
 
 echo "Test main.c program"
 
-# Try to compile the program.
+# Try to compile the program. Clean may fail.
 make clean
 make
 if [ $? -ne 0 ]; then
@@ -33,6 +33,10 @@ fi
 
 # TODO: Check if main.exe file exists.
 
+# From this line, you can add your endpoints tests.
+
+# Arguments number check.
+
 # Check the program ran without an input, discarding the output
 ./main.exe > main.error
 
@@ -41,4 +45,16 @@ if [ $? -ne 0 ]; then
   echo "All right! The return code is right"
 else
   echo "There was an error. Check main.error file"
+  exit
+fi
+
+# Real endpoints checks.
+
+./main.exe 1 2 > main.error
+
+if [ $? -eq 0 ]; then
+  echo "All right! The return code is right"
+else
+  echo "There was an error. Check main.error file"
+  exit
 fi

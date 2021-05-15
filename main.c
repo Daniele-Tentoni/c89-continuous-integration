@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
   /*
    * Don't modify argument count check unless it's specified in the exercise.
    */
-  if (argc != 2)
+  if (argc != 3)
   {
-    printf("Program called with a wrong number of parameters\n");
+    printf("Program called with a wrong number of parameters.\n");
     return 1;
   }
 
