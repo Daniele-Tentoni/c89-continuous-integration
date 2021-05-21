@@ -6,7 +6,7 @@
 - [Continuous Integration](#continuous-integration)
 - [Testing](#testing)
   - Unit (missing)
-  - [Endpoint](#endpoint-testing)
+  - [E2E](#e2e-testing)
 - [Compile](#compile)
   - [Linux](#linux)
 - [Test](#test)
@@ -27,7 +27,7 @@ In this project, for academic purpouse, I use those two types of testing to chec
 
 This section missing at the moment.
 
-### Endpoint Testing
+### E2E Testing
 
 Add to test.sh, after the compilation code, the argument number check and after that, all your endpoints tests. Use the `$?` special shell variable to store the last command used return value and output in main.error or main.log files to check some other outputs from your program.
 
@@ -47,7 +47,17 @@ command to compile without any other option and sugar. In makefile, I use also
 -Wall -Wextra -std=c89 -pedantic
 ```
 
-to force all warnings, extras too, and use the c89 language dialect.
+to force all warnings, extras too, and use the c89 language dialect. You can use the makefile utility with:
+
+```sh
+make
+```
+
+You can finally clean your project with the clean target:
+
+```sh
+make clean
+```
 
 ## Test
 
@@ -57,6 +67,10 @@ Run
 ./test.sh
 ```
 
-and wait for the results.
+and wait for the results. Even in this case, you can use the makefile utility with:
+
+```sh
+make run-tests
+```
 
 Made by Daniele Tentoni.
