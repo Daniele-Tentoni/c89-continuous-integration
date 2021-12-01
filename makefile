@@ -29,7 +29,9 @@ hello:
 clean:
 	rm main.exe
 
-# Explicit a false target.
-.PHONY: clean
+run-tests:
+	chmod u+x test.sh
+	./test.sh
 
-# TODO: Add test target
+# Explicit a false target.
+.PHONY: clean run-tests
