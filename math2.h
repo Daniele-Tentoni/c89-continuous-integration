@@ -16,9 +16,14 @@
  * limitations under the License.
  */
 
+#ifndef MATH2_H
+#define MATH2_H
+
 #pragma once
 
 /*
  * Sum two integers.
  */
 int add(int a, int b);
+
+#endif
