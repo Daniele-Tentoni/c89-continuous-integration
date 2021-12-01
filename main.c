@@ -25,7 +25,8 @@
 int main(int argc, char *argv[])
 {
   /*
-   * Put your vars here.
+   * Put your vars here. In ANSI C, they must be at the function start and must
+   * be used inside the code.
    */
   int first = 0;
   int second = 0;
