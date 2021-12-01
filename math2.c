@@ -18,7 +18,9 @@
 
 #include "math2.h"
 
-int add(int a, int b)
+  int
+add(a, b)
+  int a, b;
 {
   return a + b;
 }
