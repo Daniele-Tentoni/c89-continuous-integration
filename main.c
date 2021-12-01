@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
   /*
    * This is an optional line. It's kawaiiiiiii.
    */
-  printf("Hello world from %s program.\n", argv[1]);
+  printf("Hello world from %s program.\n", argv[0]);
 
   /*
    * Use sscanf to convert a char array to integer.
