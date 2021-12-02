@@ -41,7 +41,7 @@ fi
 ./main.exe > main.error
 
 # In this case, the result must be 1
-if [ $? -ne 0 ]; then
+if ./main.exe > main.error; then
   echo "All right! The return code is right"
 else
   echo "There was an error. Check main.error file"
@@ -52,7 +52,7 @@ fi
 
 ./main.exe 1 2 > main.error
 
-if [ $? -eq 0 ]; then
+if ./main.exe 1 2 > main.error; then
   echo "All right! The return code is right"
 else
   echo "There was an error. Check main.error file"
