@@ -25,8 +25,8 @@ echo "Test main.c program"
 
 # Try to compile the program. Clean may fail.
 make clean
-make
-if [ $? -ne 0 ]; then
+
+if ! make; then
   echo "Make command failed to compile the program\n"
   exit
 fi
