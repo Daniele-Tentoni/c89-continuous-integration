@@ -27,7 +27,7 @@ echo "Test main.c program"
 make clean
 
 if ! make; then
-  echo "Make command failed to compile the program\n"
+  printf "Make command failed to compile the program\n"
   exit
 fi
 
