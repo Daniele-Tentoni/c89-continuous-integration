@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #
 # Script made by Daniele Tentoni.
 #
@@ -18,8 +20,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-#!/bin/bash
 
 echo "Test main.c program"
 
